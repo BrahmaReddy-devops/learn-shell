@@ -9,3 +9,6 @@ cat /etc/passwd | head -2
 
 # grep root user from user file
 grep root /etc/passwd
+
+date
+time
