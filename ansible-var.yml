@@ -41,4 +41,10 @@
   tasks:
     - name: ansible fact varible and access
       ansible.builtin.debug:
-        msg: ansible host name == {{ansible_fqdn}}
+        msg: ansible host name == {\n{\n ansible_fqdn}}
+- name: regaster a varable
+  hosts: all
+  connection: local
+  tasks:
+    - name: run ashell script
+      ansible.builtin.shell: uptime
