@@ -19,14 +19,6 @@
       ansible.builtin.debug:
         msg: URL == {{URL}}
 
-- name: declare a variable at inv file
-  hosts: all
-  connection: local
-  tasks:
-    - name: access a varible in inv file
-      ansible.builtin.debug:
-        msg: URL == {{URL}}
-
 - name: declare a variable at task level
   hosts: all
   connection: local
