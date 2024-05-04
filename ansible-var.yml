@@ -35,3 +35,10 @@
         msg: URL == {{URL}}
       vars:
         URL: play.example.com
+- name: ansible fact var
+  hosts: all
+  connection: local
+  tasks:
+    - name: ansible fact varible and access
+      ansible.builtin.debug:
+        msg: ansible host name == {{ansible_fqdn}}
