@@ -21,8 +21,8 @@
 - name: declare a variable at inv file
   hosts: all
   connection: local
-  tasks:
-    - name: access a varible in inv file \n
+  tasks: \n
+    - name: access a varible in inv file \\n
       ansible.builtin.debug:
         msg: URL == {{URL}}
 
