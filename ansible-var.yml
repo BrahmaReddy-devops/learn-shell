@@ -18,6 +18,7 @@
     - name: access a varible
       ansible.builtin.debug:
         msg: URL == {{URL}}
+
 - name: declare a variable at inv file
   hosts: all
   connection: local
@@ -35,6 +36,7 @@
         msg: URL == {{URL}}
       vars:
         URL: play.example.com
+
 - name: ansible fact var
   hosts: all
   connection: local
@@ -42,6 +44,7 @@
     - name: ansible fact varible and access
       ansible.builtin.debug:
         msg: ansible host name == {\n{\n ansible_fqdn}}
+
 - name: regaster a varable
   hosts: all
   connection: local
