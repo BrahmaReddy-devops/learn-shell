@@ -22,7 +22,7 @@
   hosts: all
   connection: local
   tasks:
-    - name: access a varible in inv file
+    - name: access a varible in inv file \n
       ansible.builtin.debug:
         msg: URL == {{URL}}
 
